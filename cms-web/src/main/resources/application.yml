@@ -1,0 +1,28 @@
+#服务端口配置
+server:
+  port: 80
+
+
+spring:
+  velocity:
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  application:
+    name: bc-cms-web
+  http:
+    encoding: { charset: UTF-8, force: true, enabled: true }
+  resources:
+    chain:
+      strategy:
+        content:
+          paths: /**
+          enabled: true
+  jackson:
+    deserialization: false
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+info: bc-cms-web
