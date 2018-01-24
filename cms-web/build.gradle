@@ -1,3 +1,4 @@
+group = 'com.dreamtale'
 version = "0.0.1-SNAPSHOT"
 buildscript {
     ext {

@@ -1,3 +1,4 @@
 rootProject.name = 'cms'
 include 'cms-web'
+include 'cms-service'
 
