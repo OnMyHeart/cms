@@ -4,11 +4,6 @@ server:
 
 
 spring:
-  velocity:
-    suffix: .html
-    encoding: UTF-8
-    content-type: text/html
-    cache: false
   application:
     name: bc-cms-web
   http:
@@ -23,6 +18,13 @@ spring:
     deserialization: false
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    check-template-location: true
+    enabled: true
+    check-template: true
+    content-type: text/html
+    mode: LEGACYHTML5
 
 info: bc-cms-web

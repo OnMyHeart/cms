@@ -1,6 +1,5 @@
 package com.cms.web.config;
 
-import org.omg.CORBA.TRANSACTION_MODE;
 import org.springframework.boot.bind.RelaxedPropertyResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

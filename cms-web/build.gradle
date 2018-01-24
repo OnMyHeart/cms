@@ -24,11 +24,14 @@ repositories {
 }
 
 dependencies {
+    //spring 页面渲染框架　依赖springboot　
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    //去掉thymeleaf html 强制格式校验
+    compile 'net.sourceforge.nekohtml:nekohtml:1.9.22'
+    //web容器 = tomcat
     compile 'org.springframework.boot:spring-boot-starter-undertow'
-    compile "org.springframework.boot:spring-boot-starter-web"
+    //spring 监控
     compile 'org.springframework.boot:spring-boot-starter-actuator'
-    compile "org.springframework.boot:spring-boot-starter-velocity"
-    compile "com.wordnik:swagger-jersey2-jaxrs_2.10:1.3.8"
 
     compile "com.google.guava:guava:19.0"
     compile "com.alibaba:fastjson:1.2.7"
